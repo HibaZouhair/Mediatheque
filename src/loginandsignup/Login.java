@@ -28,6 +28,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Left = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         Right = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -49,15 +50,24 @@ public class Login extends javax.swing.JFrame {
         Left.setBackground(new java.awt.Color(51, 51, 51));
         Left.setPreferredSize(new java.awt.Dimension(400, 500));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/Bibliotheque.jpeg"))); // NOI18N
+        jLabel5.setText("jLabel5");
+
         javax.swing.GroupLayout LeftLayout = new javax.swing.GroupLayout(Left);
         Left.setLayout(LeftLayout);
         LeftLayout.setHorizontalGroup(
             LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(LeftLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 388, Short.MAX_VALUE)
+                .addContainerGap())
         );
         LeftLayout.setVerticalGroup(
             LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addGroup(LeftLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 488, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel1.add(Left);
@@ -152,8 +162,6 @@ public class Login extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        getAccessibleContext().setAccessibleName("LOGIN");
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -171,6 +179,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
