@@ -27,6 +27,8 @@ public class Catalogue extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton7 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -39,13 +41,35 @@ public class Catalogue extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Catalogue");
         setPreferredSize(new java.awt.Dimension(800, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(null);
+
+        jButton7.setBackground(new java.awt.Color(78, 51, 51));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Accueil");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+        jButton7.setBounds(40, 70, 92, 40);
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Catalogue des documents");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(190, 60, 390, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -75,9 +99,9 @@ public class Catalogue extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(78, 51, 51));
         jButton3.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Dicitionnaires");
+        jButton3.setText("Dictionnaires");
         jPanel1.add(jButton3);
-        jButton3.setBounds(540, 220, 160, 50);
+        jButton3.setBounds(560, 220, 160, 50);
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 2, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,6 +145,27 @@ public class Catalogue extends javax.swing.JFrame {
         jPanel1.add(jLabel9);
         jLabel9.setBounds(530, 350, 240, 21);
 
+        jButton4.setBackground(new java.awt.Color(78, 51, 51));
+        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Articles");
+        jPanel1.add(jButton4);
+        jButton4.setBounds(70, 403, 140, 50);
+
+        jButton5.setBackground(new java.awt.Color(78, 51, 51));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Bandes Dessinées");
+        jPanel1.add(jButton5);
+        jButton5.setBounds(280, 400, 200, 50);
+
+        jButton6.setBackground(new java.awt.Color(78, 51, 51));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Manga");
+        jPanel1.add(jButton6);
+        jButton6.setBounds(580, 403, 140, 50);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,6 +183,14 @@ public class Catalogue extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Accueil AccueilFrame = new Accueil();
+        AccueilFrame.setVisible(true);
+        AccueilFrame.pack();
+        AccueilFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -178,7 +231,12 @@ public class Catalogue extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

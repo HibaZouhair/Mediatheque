@@ -31,8 +31,9 @@ public class Adherent extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Adherent");
@@ -45,28 +46,42 @@ public class Adherent extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Espace Adhérent");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(20, 50, 190, 80);
+        jLabel2.setBounds(20, 210, 190, 80);
 
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton1.setText("Recommendations");
         jPanel1.add(jButton1);
-        jButton1.setBounds(40, 160, 130, 30);
+        jButton1.setBounds(280, 130, 140, 30);
 
+        jButton2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton2.setText("Favoris");
         jPanel1.add(jButton2);
-        jButton2.setBounds(40, 210, 130, 30);
+        jButton2.setBounds(560, 130, 130, 30);
 
+        jButton3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton3.setText("Emprunts");
         jPanel1.add(jButton3);
-        jButton3.setBounds(41, 260, 130, 30);
+        jButton3.setBounds(280, 310, 140, 30);
 
-        jButton4.setText("Historique");
-        jPanel1.add(jButton4);
-        jButton4.setBounds(40, 310, 130, 30);
+        jButton5.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        jButton5.setText("Accueil");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+        jButton5.setBounds(60, 440, 100, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/Book Case.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 220, 500);
+
+        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jButton4.setText("Historique");
+        jPanel1.add(jButton4);
+        jButton4.setBounds(560, 310, 130, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,6 +100,14 @@ public class Adherent extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        Accueil AccueilFrame = new Accueil();
+        AccueilFrame.setVisible(true);
+        AccueilFrame.pack();
+        AccueilFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,6 +149,7 @@ public class Adherent extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
