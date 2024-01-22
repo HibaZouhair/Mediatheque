@@ -8,12 +8,12 @@ package loginandsignup;
  *
  * @author Admin
  */
-public class Livres extends javax.swing.JFrame {
+public class Article extends javax.swing.JFrame {
 
     /**
-     * Creates new form Livres
+     * Creates new form Article
      */
-    public Livres() {
+    public Article() {
         initComponents();
     }
 
@@ -27,19 +27,30 @@ public class Livres extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Livres");
+        setTitle("Article");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(null);
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton1.setText("Ajouter");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(60, 360, 130, 40);
 
         jButton7.setBackground(new java.awt.Color(78, 51, 51));
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -55,50 +66,35 @@ public class Livres extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Livres");
+        jLabel10.setText("Article");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(340, 60, 100, 60);
-
-        jButton4.setBackground(new java.awt.Color(78, 51, 51));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Article");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton4);
-        jButton4.setBounds(90, 220, 140, 50);
-
-        jButton5.setBackground(new java.awt.Color(78, 51, 51));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Bande Dessinée");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5);
-        jButton5.setBounds(290, 220, 200, 50);
-
-        jButton6.setBackground(new java.awt.Color(78, 51, 51));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Manga");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton6);
-        jButton6.setBounds(580, 220, 140, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, -20, 740, 160);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "ID_Article", "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "ID_Document", "day", "Journal"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(40, 190, 720, 140);
+
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setText("Supprimer");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(60, 410, 130, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,49 +102,29 @@ public class Livres extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 52, Short.MAX_VALUE))
+                .addGap(0, 54, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 45, Short.MAX_VALUE))
+                .addGap(0, 18, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Document DocumentFrame = new Document();
-        DocumentFrame.setVisible(true);
-        DocumentFrame.pack();
-        DocumentFrame.setLocationRelativeTo(null);
+        Document CatalogueFrame = new Document();
+        CatalogueFrame.setVisible(true);
+        CatalogueFrame.pack();
+        CatalogueFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Article ArticleFrame = new Article();
-        ArticleFrame.setVisible(true);
-        ArticleFrame.pack();
-        ArticleFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        Bandedessinee BandedessineeFrame = new Bandedessinee();
-        BandedessineeFrame.setVisible(true);
-        BandedessineeFrame.pack();
-        BandedessineeFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        Manga MangaFrame = new Manga();
-        MangaFrame.setVisible(true);
-        MangaFrame.pack();
-        MangaFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,31 +143,32 @@ public class Livres extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Livres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Article.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Livres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Article.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Livres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Article.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Livres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Article.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Livres().setVisible(true);
+                new Article().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

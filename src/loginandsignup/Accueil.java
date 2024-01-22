@@ -143,7 +143,7 @@ public class Accueil extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Catalogue CatalogueFrame = new Catalogue();
+        Document CatalogueFrame = new Document();
         CatalogueFrame.setVisible(true);
         CatalogueFrame.pack();
         CatalogueFrame.setLocationRelativeTo(null);

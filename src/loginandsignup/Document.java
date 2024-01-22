@@ -8,12 +8,12 @@ package loginandsignup;
  *
  * @author Admin
  */
-public class Catalogue extends javax.swing.JFrame {
+public class Document extends javax.swing.JFrame {
 
     /**
      * Creates new form Catalogue
      */
-    public Catalogue() {
+    public Document() {
         initComponents();
     }
 
@@ -43,7 +43,7 @@ public class Catalogue extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Catalogue");
+        setTitle("Document");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 500));
@@ -76,6 +76,11 @@ public class Catalogue extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Livres");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(70, 220, 140, 50);
 
@@ -83,6 +88,11 @@ public class Catalogue extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Magazines");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(290, 220, 150, 50);
 
@@ -167,6 +177,22 @@ public class Catalogue extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Magazines MagazinesFrame = new Magazines();
+        MagazinesFrame.setVisible(true);
+        MagazinesFrame.pack();
+        MagazinesFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Livres LivresFrame = new Livres();
+        LivresFrame.setVisible(true);
+        LivresFrame.pack();
+        LivresFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -184,20 +210,21 @@ public class Catalogue extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Catalogue.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Document.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Catalogue.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Document.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Catalogue.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Document.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Catalogue.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Document.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Catalogue().setVisible(true);
+                new Document().setVisible(true);
             }
         });
     }
