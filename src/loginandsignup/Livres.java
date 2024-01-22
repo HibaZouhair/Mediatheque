@@ -29,7 +29,6 @@ public class Livres extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton7 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -59,18 +58,6 @@ public class Livres extends javax.swing.JFrame {
         jPanel1.add(jLabel10);
         jLabel10.setBounds(340, 60, 100, 60);
 
-        jButton4.setBackground(new java.awt.Color(78, 51, 51));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Article");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton4);
-        jButton4.setBounds(90, 220, 140, 50);
-
         jButton5.setBackground(new java.awt.Color(78, 51, 51));
         jButton5.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
@@ -81,7 +68,7 @@ public class Livres extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton5);
-        jButton5.setBounds(290, 220, 200, 50);
+        jButton5.setBounds(150, 260, 200, 50);
 
         jButton6.setBackground(new java.awt.Color(78, 51, 51));
         jButton6.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
@@ -93,7 +80,7 @@ public class Livres extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton6);
-        jButton6.setBounds(580, 220, 140, 50);
+        jButton6.setBounds(460, 260, 140, 50);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -125,14 +112,6 @@ public class Livres extends javax.swing.JFrame {
         DocumentFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Article ArticleFrame = new Article();
-        ArticleFrame.setVisible(true);
-        ArticleFrame.pack();
-        ArticleFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         Bandedessinee BandedessineeFrame = new Bandedessinee();
@@ -186,7 +165,6 @@ public class Livres extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;

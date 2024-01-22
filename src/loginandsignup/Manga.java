@@ -82,19 +82,19 @@ public class Manga extends javax.swing.JFrame {
         jScrollPane1.setBounds(40, 190, 720, 140);
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton1.setText("Ajouter");
+        jButton1.setText("Ajouter Manga");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(60, 360, 130, 40);
+        jButton1.setBounds(60, 360, 180, 40);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton2.setText("Supprimer");
+        jButton2.setText("Supprimer Manga");
         jPanel1.add(jButton2);
-        jButton2.setBounds(60, 410, 130, 40);
+        jButton2.setBounds(60, 410, 180, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
