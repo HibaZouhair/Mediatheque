@@ -41,13 +41,9 @@ public class Catalogue extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Catalogue");
-        setPreferredSize(new java.awt.Dimension(800, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setMinimumSize(new java.awt.Dimension(800, 500));
@@ -145,27 +141,6 @@ public class Catalogue extends javax.swing.JFrame {
         jPanel1.add(jLabel9);
         jLabel9.setBounds(530, 350, 240, 21);
 
-        jButton4.setBackground(new java.awt.Color(78, 51, 51));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Articles");
-        jPanel1.add(jButton4);
-        jButton4.setBounds(70, 403, 140, 50);
-
-        jButton5.setBackground(new java.awt.Color(78, 51, 51));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Bandes Dessinées");
-        jPanel1.add(jButton5);
-        jButton5.setBounds(280, 400, 200, 50);
-
-        jButton6.setBackground(new java.awt.Color(78, 51, 51));
-        jButton6.setFont(new java.awt.Font("Segoe UI", 3, 19)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Manga");
-        jPanel1.add(jButton6);
-        jButton6.setBounds(580, 403, 140, 50);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -231,9 +206,6 @@ public class Catalogue extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

@@ -4,6 +4,11 @@
  */
 package loginandsignup;
 
+import java.nio.file.DirectoryStream.Filter;
+import java.sql.SQLException;
+import java.util.LinkedList;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Admin
@@ -15,6 +20,7 @@ public class Recherche extends javax.swing.JFrame {
      */
     public Recherche() {
         initComponents();
+       
     }
 
     /**
@@ -33,10 +39,10 @@ public class Recherche extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Recherche");
-        setPreferredSize(new java.awt.Dimension(800, 500));
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
@@ -81,6 +87,10 @@ public class Recherche extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(670, 30, 72, 23);
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Article", "Bande dessinée", "Manga", "Magazine", "Dictionnaire", " " }));
+        jPanel1.add(jComboBox2);
+        jComboBox2.setBounds(50, 82, 170, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,9 +161,12 @@ public class Recherche extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
 }
+
