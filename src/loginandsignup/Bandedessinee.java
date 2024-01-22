@@ -93,6 +93,11 @@ public class Bandedessinee extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton2.setText("Supprimer une bande dessinee");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(60, 410, 273, 40);
 
@@ -115,16 +120,28 @@ public class Bandedessinee extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Document CatalogueFrame = new Document();
-        CatalogueFrame.setVisible(true);
-        CatalogueFrame.pack();
-        CatalogueFrame.setLocationRelativeTo(null);
+        Livres LivresFrame = new Livres();
+        LivresFrame.setVisible(true);
+        LivresFrame.pack();
+        LivresFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        AjouterBandeDessinee AjouterBandeDessineeFrame = new AjouterBandeDessinee();
+        AjouterBandeDessineeFrame.setVisible(true);
+        AjouterBandeDessineeFrame.pack();
+        AjouterBandeDessineeFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SupprimerBandeDessinee SupprimerBandeDessineeFrame = new SupprimerBandeDessinee();
+        SupprimerBandeDessineeFrame.setVisible(true);
+        SupprimerBandeDessineeFrame.pack();
+        SupprimerBandeDessineeFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

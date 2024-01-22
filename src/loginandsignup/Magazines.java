@@ -120,19 +120,27 @@ public class Magazines extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Accueil AccueilFrame = new Accueil();
-        AccueilFrame.setVisible(true);
-        AccueilFrame.pack();
-        AccueilFrame.setLocationRelativeTo(null);
+        Document DocumentFrame = new Document();
+        DocumentFrame.setVisible(true);
+        DocumentFrame.pack();
+        DocumentFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        AjouterMagazine AjouterMagazineFrame = new AjouterMagazine();
+        AjouterMagazineFrame.setVisible(true);
+        AjouterMagazineFrame.pack();
+        AjouterMagazineFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        SupprimerMagazine SupprimerMagazineFrame = new SupprimerMagazine();
+        SupprimerMagazineFrame.setVisible(true);
+        SupprimerMagazineFrame.pack();
+        SupprimerMagazineFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

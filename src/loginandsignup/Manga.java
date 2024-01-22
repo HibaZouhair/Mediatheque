@@ -93,6 +93,11 @@ public class Manga extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton2.setText("Supprimer Manga");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(60, 410, 180, 40);
 
@@ -115,16 +120,28 @@ public class Manga extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Document CatalogueFrame = new Document();
-        CatalogueFrame.setVisible(true);
-        CatalogueFrame.pack();
-        CatalogueFrame.setLocationRelativeTo(null);
+        Livres LivresFrame = new Livres();
+        LivresFrame.setVisible(true);
+        LivresFrame.pack();
+        LivresFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        AjouterManga AjouterMangaFrame = new AjouterManga();
+        AjouterMangaFrame.setVisible(true);
+        AjouterMangaFrame.pack();
+        AjouterMangaFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SupprimerManga SupprimerMangaFrame = new SupprimerManga();
+        SupprimerMangaFrame.setVisible(true);
+        SupprimerMangaFrame.pack();
+        SupprimerMangaFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
