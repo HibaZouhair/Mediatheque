@@ -34,6 +34,8 @@ public class Favoris extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Favoris");
@@ -55,7 +57,7 @@ public class Favoris extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton5);
-        jButton5.setBounds(60, 440, 100, 40);
+        jButton5.setBounds(40, 40, 100, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/Book Case.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -65,20 +67,36 @@ public class Favoris extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Ajouter");
         jPanel1.add(jButton1);
-        jButton1.setBounds(240, 310, 130, 40);
+        jButton1.setBounds(530, 160, 130, 40);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setText("Supprimer");
         jPanel1.add(jButton2);
-        jButton2.setBounds(430, 310, 130, 40);
+        jButton2.setBounds(530, 210, 130, 40);
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(320, 230, 190, 30);
+        jTextField1.setBounds(320, 190, 190, 30);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("ISBN");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(270, 230, 50, 30);
+        jLabel3.setBounds(260, 190, 50, 30);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "type", "ISBN", "titre", "auteurs", "editeur"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(22, 280, 760, 170);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -149,6 +167,8 @@ public class Favoris extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
