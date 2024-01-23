@@ -8,12 +8,12 @@ package loginandsignup;
  *
  * @author Admin
  */
-public class Favoris extends javax.swing.JFrame {
+public class Emprunts extends javax.swing.JFrame {
 
     /**
-     * Creates new form Favoris
+     * Creates new form Emprunts
      */
-    public Favoris() {
+    public Emprunts() {
         initComponents();
     }
 
@@ -36,15 +36,16 @@ public class Favoris extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Emprunts");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setLayout(null);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Favoris");
+        jLabel2.setText("Emprunts");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(340, 30, 120, 80);
+        jLabel2.setBounds(340, 30, 150, 80);
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton5.setText("Accueil");
@@ -91,7 +92,7 @@ public class Favoris extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 28, Short.MAX_VALUE))
+                .addGap(0, 23, Short.MAX_VALUE))
         );
 
         pack();
@@ -122,20 +123,20 @@ public class Favoris extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Favoris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Emprunts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Favoris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Emprunts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Favoris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Emprunts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Favoris.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Emprunts.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Favoris().setVisible(true);
+                new Emprunts().setVisible(true);
             }
         });
     }

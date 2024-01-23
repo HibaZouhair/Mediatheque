@@ -48,11 +48,21 @@ public class Adherent extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton2.setText("Favoris");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(400, 110, 160, 50);
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton3.setText("Emprunts");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3);
         jButton3.setBounds(400, 200, 160, 50);
 
@@ -101,6 +111,22 @@ public class Adherent extends javax.swing.JFrame {
         AccueilFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Favoris FavorisFrame = new Favoris();
+        FavorisFrame.setVisible(true);
+        FavorisFrame.pack();
+        FavorisFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Emprunts EmpruntsFrame = new Emprunts();
+        EmpruntsFrame.setVisible(true);
+        EmpruntsFrame.pack();
+        EmpruntsFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
