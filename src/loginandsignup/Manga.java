@@ -40,7 +40,7 @@ public class Manga extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Manga");
@@ -74,13 +74,13 @@ public class Manga extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "ID_Manga", "ID_Livre", "Illustrateur", "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome"
+                "Illustrateur", "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -153,12 +153,9 @@ public class Manga extends javax.swing.JFrame {
         jPanel2.add(jTextField1);
         jTextField1.setBounds(344, 180, 190, 30);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ISBN");
-        jLabel3.setToolTipText("");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(290, 180, 50, 25);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Illustrateur", "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome" }));
+        jPanel2.add(jComboBox1);
+        jComboBox1.setBounds(152, 180, 160, 30);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(0, 0, 800, 500);
@@ -262,11 +259,11 @@ public class Manga extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

@@ -36,7 +36,7 @@ public class Magazines extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Magazines");
@@ -70,13 +70,13 @@ public class Magazines extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "ID_Magazine", "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "periodicite", "NumerEdition", "ID_Document", "day"
+                "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "periodicite", "NumeroEdition", "day"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -122,12 +122,9 @@ public class Magazines extends javax.swing.JFrame {
         jPanel1.add(jTextField1);
         jTextField1.setBounds(344, 180, 190, 30);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("ISBN");
-        jLabel2.setToolTipText("");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(290, 180, 50, 25);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "day", "periodicite", "NumeroEdition" }));
+        jPanel1.add(jComboBox1);
+        jComboBox1.setBounds(152, 180, 160, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,21 +144,13 @@ public class Magazines extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Document DocumentFrame = new Document();
-        DocumentFrame.setVisible(true);
-        DocumentFrame.pack();
-        DocumentFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton7ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        AjouterMagazine AjouterMagazineFrame = new AjouterMagazine();
-        AjouterMagazineFrame.setVisible(true);
-        AjouterMagazineFrame.pack();
-        AjouterMagazineFrame.setLocationRelativeTo(null);
-        this.dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         SupprimerMagazine SupprimerMagazineFrame = new SupprimerMagazine();
@@ -171,13 +160,21 @@ public class Magazines extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        AjouterMagazine AjouterMagazineFrame = new AjouterMagazine();
+        AjouterMagazineFrame.setVisible(true);
+        AjouterMagazineFrame.pack();
+        AjouterMagazineFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Document DocumentFrame = new Document();
+        DocumentFrame.setVisible(true);
+        DocumentFrame.pack();
+        DocumentFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -219,9 +216,9 @@ public class Magazines extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton7;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

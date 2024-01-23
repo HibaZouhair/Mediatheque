@@ -28,7 +28,7 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        ajouterDictionnaire = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -43,10 +43,10 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        getISBN = new javax.swing.JTextField();
+        getTitre = new javax.swing.JTextField();
+        getDictionnaireByAuteur = new javax.swing.JTextField();
+        getDictionnaireByEditeur = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
@@ -70,12 +70,12 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(50, 50, 110, 50);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Ajouter");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(620, 50, 130, 50);
+        ajouterDictionnaire.setBackground(new java.awt.Color(51, 51, 51));
+        ajouterDictionnaire.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        ajouterDictionnaire.setForeground(new java.awt.Color(255, 255, 255));
+        ajouterDictionnaire.setText("Ajouter");
+        jPanel1.add(ajouterDictionnaire);
+        ajouterDictionnaire.setBounds(620, 50, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -141,20 +141,26 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
         jLabel11.setText("NombreDeTomes");
         jPanel1.add(jLabel11);
         jLabel11.setBounds(380, 240, 130, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jTextField1);
         jTextField1.setBounds(160, 150, 180, 22);
         jPanel1.add(jTextField2);
         jTextField2.setBounds(160, 200, 180, 22);
         jPanel1.add(jTextField3);
         jTextField3.setBounds(160, 260, 180, 22);
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(160, 320, 180, 22);
-        jPanel1.add(jTextField5);
-        jTextField5.setBounds(160, 380, 180, 22);
-        jPanel1.add(jTextField6);
-        jTextField6.setBounds(160, 430, 180, 22);
-        jPanel1.add(jTextField7);
-        jTextField7.setBounds(510, 150, 190, 22);
+        jPanel1.add(getISBN);
+        getISBN.setBounds(160, 320, 180, 22);
+        jPanel1.add(getTitre);
+        getTitre.setBounds(160, 380, 180, 22);
+        jPanel1.add(getDictionnaireByAuteur);
+        getDictionnaireByAuteur.setBounds(160, 430, 180, 22);
+        jPanel1.add(getDictionnaireByEditeur);
+        getDictionnaireByEditeur.setBounds(510, 150, 190, 22);
         jPanel1.add(jTextField8);
         jTextField8.setBounds(510, 200, 190, 22);
         jPanel1.add(jTextField9);
@@ -194,6 +200,10 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -230,7 +240,11 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton ajouterDictionnaire;
+    private javax.swing.JTextField getDictionnaireByAuteur;
+    private javax.swing.JTextField getDictionnaireByEditeur;
+    private javax.swing.JTextField getISBN;
+    private javax.swing.JTextField getTitre;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -249,10 +263,6 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables

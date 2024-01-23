@@ -28,7 +28,7 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        supprimerDictionnaire = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -52,12 +52,12 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(50, 50, 110, 50);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Supprimer");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(330, 320, 130, 50);
+        supprimerDictionnaire.setBackground(new java.awt.Color(51, 51, 51));
+        supprimerDictionnaire.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        supprimerDictionnaire.setForeground(new java.awt.Color(255, 255, 255));
+        supprimerDictionnaire.setText("Supprimer");
+        jPanel1.add(supprimerDictionnaire);
+        supprimerDictionnaire.setBounds(330, 320, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -140,12 +140,12 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton supprimerDictionnaire;
     // End of variables declaration//GEN-END:variables
 }
