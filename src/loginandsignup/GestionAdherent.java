@@ -26,21 +26,155 @@ public class GestionAdherent extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jButton7 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("GestionAdherent");
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
+        jPanel1.setLayout(null);
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Gestion des adherents");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(230, 60, 340, 60);
+
+        jButton7.setBackground(new java.awt.Color(78, 51, 51));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Accueil");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+        jButton7.setBounds(40, 70, 92, 40);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(30, -20, 740, 160);
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "Username", "CNE"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane1);
+        jScrollPane1.setBounds(30, 260, 740, 110);
+
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton1.setText("Ajouter un dictionnaire");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(70, 380, 240, 40);
+
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jButton2.setText("Supprimer un dictionnaire");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(70, 430, 240, 40);
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1);
+        jTextField1.setBounds(344, 180, 190, 30);
+
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton5.setText("Search");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton5);
+        jButton5.setBounds(550, 180, 130, 30);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All", "Username", "CNE" }));
+        jPanel1.add(jComboBox1);
+        jComboBox1.setBounds(152, 180, 160, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 851, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 51, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 525, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 25, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        Document DocumentFrame = new Document();
+        DocumentFrame.setVisible(true);
+        DocumentFrame.pack();
+        DocumentFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        AjouterDictionnaire AjouterDictionnaireFrame = new AjouterDictionnaire();
+        AjouterDictionnaireFrame.setVisible(true);
+        AjouterDictionnaireFrame.pack();
+        AjouterDictionnaireFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SupprimerDictionnaire SupprimerDictionnaireFrame = new SupprimerDictionnaire();
+        SupprimerDictionnaireFrame.setVisible(true);
+        SupprimerDictionnaireFrame.pack();
+        SupprimerDictionnaireFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +212,16 @@ public class GestionAdherent extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

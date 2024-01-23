@@ -47,6 +47,11 @@ public class Accueil extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("Gestion des adherents");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton5);
         jButton5.setBounds(270, 350, 280, 60);
 
@@ -165,6 +170,14 @@ public class Accueil extends javax.swing.JFrame {
         AdherentFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        GestionAdherent GestionAdherentFrame = new GestionAdherent();
+        GestionAdherentFrame.setVisible(true);
+        GestionAdherentFrame.pack();
+        GestionAdherentFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
