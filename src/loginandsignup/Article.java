@@ -4,17 +4,76 @@
  */
 package loginandsignup;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author Admin
  */
 public class Article extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Article
-     */
+    
+    
     public Article() {
         initComponents();
+        String[] options = {"ISBN", "itre", "uteurs", "editeur","AnneeEditeur", "URL", "day", "Journal"};
+        choice = new JComboBox<>(options);
+        choice.addActionListener((ActionEvent e) -> {
+            // Mettre à jour le champ de texte en fonction de l'option sélectionnée
+            String selectedOption = (String) choice.getSelectedItem();
+            if (null != selectedOption) switch (selectedOption) {
+                case "titre" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez le titre ici");
+                case "ISBN" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez l'ISBN ici");
+                case "auteurs" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez les auteurs ici");
+                case "editeur" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez l'éditeur ici");
+                case "AnneeEditionr" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez l'annee ici");
+                case "URL" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez l'url ici");
+                case "day" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez le day ici");
+                case "Journal" -> // Mettez à jour le champ de texte en conséquence
+                    txtSearch.setText("Saisissez le journal ici");
+                default -> {
+                }
+            }
+        });
+         search.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Lancer la recherche en utilisant les valeurs actuelles de la JComboBox et du champ de texte
+                String selectedOption = (String) choice.getSelectedItem();
+                String inputValue = txtSearch.getText();
+
+                // Réalisez l'action de recherche en fonction de l'option sélectionnée et de la valeur saisie
+                // ...
+
+                // Affichez les résultats ou faites autre chose avec eux
+                // ...
+            }
+        });
+         search.addActionListener((var e) -> {
+             // Lancer la recherche en utilisant les valeurs actuelles de la JComboBox et du champ de texte
+             String selectedOption = (String) choice.getSelectedItem();
+             String inputValue = txtSearch.getText();
+             
+             // Réalisez l'action de recherche en fonction de l'option sélectionnée et de la valeur saisie
+             // ...
+             
+             // Affichez les résultats ou faites autre chose avec eux
+             // ...
+        });
+        
+
     }
 
     /**
@@ -32,11 +91,11 @@ public class Article extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        articles = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        txtSearch = new javax.swing.JTextField();
+        search = new javax.swing.JButton();
+        choice = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Article");
@@ -78,7 +137,7 @@ public class Article extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, -20, 740, 160);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        articles.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null},
@@ -89,7 +148,7 @@ public class Article extends javax.swing.JFrame {
                 "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "day", "Journal"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(articles);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(40, 230, 720, 140);
@@ -104,27 +163,27 @@ public class Article extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(60, 440, 190, 40);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtSearchActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(344, 180, 190, 30);
+        jPanel1.add(txtSearch);
+        txtSearch.setBounds(344, 180, 190, 30);
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("Search");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        search.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        search.setText("Search");
+        search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                searchActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5);
-        jButton5.setBounds(550, 180, 130, 30);
+        jPanel1.add(search);
+        search.setBounds(550, 180, 130, 30);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "day", "Journal" }));
-        jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(152, 180, 160, 30);
+        choice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "day", "Journal" }));
+        jPanel1.add(choice);
+        choice.setBounds(152, 180, 160, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -168,13 +227,14 @@ public class Article extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
+        
+        
+    }//GEN-LAST:event_searchActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtSearchActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,19 +269,20 @@ public class Article extends javax.swing.JFrame {
                 new Article().setVisible(true);
             }
         });
-    }
+        
+ }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable articles;
+    private javax.swing.JComboBox<String> choice;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton search;
+    private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }

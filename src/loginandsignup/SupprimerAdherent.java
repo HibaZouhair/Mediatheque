@@ -28,11 +28,11 @@ public class SupprimerAdherent extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        supprimerAdherent = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        CNE = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("SupprimerAdherent");
@@ -53,17 +53,17 @@ public class SupprimerAdherent extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(60, 60, 120, 40);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Supprimer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        supprimerAdherent.setBackground(new java.awt.Color(51, 51, 51));
+        supprimerAdherent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        supprimerAdherent.setForeground(new java.awt.Color(255, 255, 255));
+        supprimerAdherent.setText("Supprimer");
+        supprimerAdherent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                supprimerAdherentActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(330, 320, 130, 50);
+        jPanel1.add(supprimerAdherent);
+        supprimerAdherent.setBounds(330, 320, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -81,8 +81,8 @@ public class SupprimerAdherent extends javax.swing.JFrame {
         jLabel5.setText("CNE");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(260, 230, 100, 40);
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(330, 240, 180, 22);
+        jPanel1.add(CNE);
+        CNE.setBounds(330, 240, 180, 22);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,9 +110,9 @@ public class SupprimerAdherent extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void supprimerAdherentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supprimerAdherentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_supprimerAdherentActionPerformed
 
     /**
      * @param args the command line arguments
@@ -150,12 +150,12 @@ public class SupprimerAdherent extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField CNE;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton supprimerAdherent;
     // End of variables declaration//GEN-END:variables
 }

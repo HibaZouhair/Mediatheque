@@ -28,11 +28,9 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        ajouterBandeDessinee = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -43,18 +41,16 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
+        Illustrateur = new javax.swing.JTextField();
+        ISBN = new javax.swing.JTextField();
+        titre = new javax.swing.JTextField();
+        auteurs = new javax.swing.JTextField();
+        editeur = new javax.swing.JTextField();
+        AnneeEdition = new javax.swing.JTextField();
+        URL = new javax.swing.JTextField();
+        type = new javax.swing.JTextField();
+        NombreDePages = new javax.swing.JTextField();
+        tome = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,12 +70,12 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(40, 50, 120, 40);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Ajouter");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(620, 50, 130, 50);
+        ajouterBandeDessinee.setBackground(new java.awt.Color(51, 51, 51));
+        ajouterBandeDessinee.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        ajouterBandeDessinee.setForeground(new java.awt.Color(255, 255, 255));
+        ajouterBandeDessinee.setText("Ajouter");
+        jPanel1.add(ajouterBandeDessinee);
+        ajouterBandeDessinee.setBounds(620, 50, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -87,22 +83,10 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         jPanel1.add(jLabel10);
         jLabel10.setBounds(210, 40, 370, 60);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("ID_BandeDessinee");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(30, 140, 140, 40);
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, -40, 740, 160);
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("ID_Livre");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(70, 190, 100, 40);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,13 +116,13 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("editeur");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(390, 140, 100, 40);
+        jLabel8.setBounds(40, 150, 100, 40);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("AnneeEdition");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(380, 190, 100, 40);
+        jLabel9.setBounds(30, 200, 100, 40);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -156,37 +140,39 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("NombreDePages");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(380, 380, 110, 30);
+        jLabel13.setBounds(380, 160, 110, 30);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("tome");
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(410, 420, 100, 40);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(160, 150, 180, 22);
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(160, 200, 180, 22);
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(160, 260, 180, 22);
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(160, 320, 180, 22);
-        jPanel1.add(jTextField5);
-        jTextField5.setBounds(160, 380, 180, 22);
-        jPanel1.add(jTextField6);
-        jTextField6.setBounds(160, 430, 180, 22);
-        jPanel1.add(jTextField7);
-        jTextField7.setBounds(510, 150, 190, 22);
-        jPanel1.add(jTextField8);
-        jTextField8.setBounds(510, 200, 190, 22);
-        jPanel1.add(jTextField9);
-        jTextField9.setBounds(510, 250, 190, 22);
-        jPanel1.add(jTextField10);
-        jTextField10.setBounds(510, 320, 190, 22);
-        jPanel1.add(jTextField11);
-        jTextField11.setBounds(510, 380, 190, 22);
-        jPanel1.add(jTextField12);
-        jTextField12.setBounds(510, 430, 190, 22);
+        jLabel14.setBounds(410, 200, 100, 40);
+        jPanel1.add(Illustrateur);
+        Illustrateur.setBounds(160, 260, 180, 22);
+        jPanel1.add(ISBN);
+        ISBN.setBounds(160, 320, 180, 22);
+
+        titre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                titreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(titre);
+        titre.setBounds(160, 380, 180, 22);
+        jPanel1.add(auteurs);
+        auteurs.setBounds(160, 430, 180, 22);
+        jPanel1.add(editeur);
+        editeur.setBounds(160, 160, 190, 22);
+        jPanel1.add(AnneeEdition);
+        AnneeEdition.setBounds(160, 210, 190, 22);
+        jPanel1.add(URL);
+        URL.setBounds(510, 250, 190, 22);
+        jPanel1.add(type);
+        type.setBounds(510, 320, 190, 22);
+        jPanel1.add(NombreDePages);
+        NombreDePages.setBounds(510, 160, 190, 22);
+        jPanel1.add(tome);
+        tome.setBounds(510, 210, 190, 22);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -213,6 +199,10 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         BandedessineeFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void titreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_titreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_titreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,7 +240,14 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField AnneeEdition;
+    private javax.swing.JTextField ISBN;
+    private javax.swing.JTextField Illustrateur;
+    private javax.swing.JTextField NombreDePages;
+    private javax.swing.JTextField URL;
+    private javax.swing.JButton ajouterBandeDessinee;
+    private javax.swing.JTextField auteurs;
+    private javax.swing.JTextField editeur;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -258,8 +255,6 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -267,17 +262,8 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField titre;
+    private javax.swing.JTextField tome;
+    private javax.swing.JTextField type;
     // End of variables declaration//GEN-END:variables
 }

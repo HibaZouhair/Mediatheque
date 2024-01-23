@@ -4,20 +4,30 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterDictionnaire.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerManga.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerBandeDessinee.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterBandeDessinee.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterMagazine.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterAdherent.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerDictionnaire.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SignUp.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Emprunts.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/GestionAdherent.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerAdherent.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Article.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Livres.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Kindles.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Magazines.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerArticle.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Book%20Case.jpeg</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Accueil.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Login.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterBandeDessinee.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Bandedessinee.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Dictionnaire.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterManga.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Article.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Bibliotheque.jpeg</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/AjouterArticle.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Adherent.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Document.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Livres.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Magazines.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/SupprimerArticle.java</file>
-            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/LoginAndSignUp.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Principale.java</file>
+            <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Favoris.java</file>
             <file>file:/C:/Users/Admin/Documents/GitHub/Mediatheque/src/loginandsignup/Manga.java</file>
         </group>
     </open-files>

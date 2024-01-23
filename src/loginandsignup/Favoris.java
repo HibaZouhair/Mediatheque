@@ -30,12 +30,12 @@ public class Favoris extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        ajouterFavoris = new javax.swing.JButton();
+        supprimerFavoris = new javax.swing.JButton();
+        ISBN = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        favoris = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Favoris");
@@ -64,17 +64,17 @@ public class Favoris extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(190, -60, 400, 200);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("Ajouter");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(530, 160, 130, 40);
+        ajouterFavoris.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        ajouterFavoris.setText("Ajouter");
+        jPanel1.add(ajouterFavoris);
+        ajouterFavoris.setBounds(530, 160, 130, 40);
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setText("Supprimer");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(530, 210, 130, 40);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(320, 190, 190, 30);
+        supprimerFavoris.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        supprimerFavoris.setText("Supprimer");
+        jPanel1.add(supprimerFavoris);
+        supprimerFavoris.setBounds(530, 210, 130, 40);
+        jPanel1.add(ISBN);
+        ISBN.setBounds(320, 190, 190, 30);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -82,18 +82,18 @@ public class Favoris extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(260, 190, 50, 30);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        favoris.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "type", "ISBN", "titre", "auteurs", "editeur"
+                "ISBN", "titre", "auteurs", "editeur"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(favoris);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(22, 280, 760, 170);
@@ -160,15 +160,15 @@ public class Favoris extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JTextField ISBN;
+    private javax.swing.JButton ajouterFavoris;
+    private javax.swing.JTable favoris;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton supprimerFavoris;
     // End of variables declaration//GEN-END:variables
 }

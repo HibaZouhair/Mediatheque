@@ -30,12 +30,12 @@ public class Emprunts extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        ajouterEmprunt = new javax.swing.JButton();
+        supprimerEmprunt = new javax.swing.JButton();
+        ISBN = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        emprunts = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Emprunts");
@@ -64,17 +64,17 @@ public class Emprunts extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(190, -60, 400, 200);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("Ajouter");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(480, 170, 130, 40);
+        ajouterEmprunt.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        ajouterEmprunt.setText("Ajouter");
+        jPanel1.add(ajouterEmprunt);
+        ajouterEmprunt.setBounds(480, 170, 130, 40);
 
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton2.setText("Supprimer");
-        jPanel1.add(jButton2);
-        jButton2.setBounds(480, 220, 130, 40);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(280, 200, 190, 30);
+        supprimerEmprunt.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        supprimerEmprunt.setText("Supprimer");
+        jPanel1.add(supprimerEmprunt);
+        supprimerEmprunt.setBounds(480, 220, 130, 40);
+        jPanel1.add(ISBN);
+        ISBN.setBounds(280, 200, 190, 30);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -82,18 +82,18 @@ public class Emprunts extends javax.swing.JFrame {
         jPanel1.add(jLabel3);
         jLabel3.setBounds(230, 200, 50, 30);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        emprunts.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "type", "ISBN", "titre", "auteurs", "editeur"
+                "ISBN", "titre", "auteurs", "editeur"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(emprunts);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(32, 310, 750, 140);
@@ -160,15 +160,15 @@ public class Emprunts extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JTextField ISBN;
+    private javax.swing.JButton ajouterEmprunt;
+    private javax.swing.JTable emprunts;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton supprimerEmprunt;
     // End of variables declaration//GEN-END:variables
 }

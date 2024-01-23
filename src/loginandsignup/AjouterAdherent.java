@@ -28,13 +28,13 @@ public class AjouterAdherent extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        ajouterAdherent = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        Username = new javax.swing.JTextField();
+        CNE = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("AjouterAdheret");
@@ -55,12 +55,12 @@ public class AjouterAdherent extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(60, 60, 120, 40);
 
-        jButton1.setBackground(new java.awt.Color(51, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Ajouter");
-        jPanel1.add(jButton1);
-        jButton1.setBounds(620, 50, 130, 50);
+        ajouterAdherent.setBackground(new java.awt.Color(51, 51, 51));
+        ajouterAdherent.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        ajouterAdherent.setForeground(new java.awt.Color(255, 255, 255));
+        ajouterAdherent.setText("Ajouter");
+        jPanel1.add(ajouterAdherent);
+        ajouterAdherent.setBounds(620, 50, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -84,10 +84,10 @@ public class AjouterAdherent extends javax.swing.JFrame {
         jLabel3.setText("CNE");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(170, 310, 100, 40);
-        jPanel1.add(jTextField1);
-        jTextField1.setBounds(260, 220, 200, 40);
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(260, 310, 200, 40);
+        jPanel1.add(Username);
+        Username.setBounds(260, 220, 200, 40);
+        jPanel1.add(CNE);
+        CNE.setBounds(260, 310, 200, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,14 +151,14 @@ public class AjouterAdherent extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField CNE;
+    private javax.swing.JTextField Username;
+    private javax.swing.JButton ajouterAdherent;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
