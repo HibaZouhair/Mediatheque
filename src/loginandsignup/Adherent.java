@@ -83,6 +83,11 @@ public class Adherent extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton1.setText("Kindles");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(400, 300, 160, 50);
 
@@ -127,6 +132,14 @@ public class Adherent extends javax.swing.JFrame {
         EmpruntsFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Kindles KindlesFrame = new Kindles();
+        KindlesFrame.setVisible(true);
+        KindlesFrame.pack();
+        KindlesFrame.setLocationRelativeTo(null);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
