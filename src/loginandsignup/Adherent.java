@@ -32,7 +32,7 @@ public class Adherent extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Adherent");
@@ -49,12 +49,12 @@ public class Adherent extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton2.setText("Favoris");
         jPanel1.add(jButton2);
-        jButton2.setBounds(420, 190, 130, 30);
+        jButton2.setBounds(400, 110, 160, 50);
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jButton3.setText("Emprunts");
         jPanel1.add(jButton3);
-        jButton3.setBounds(280, 310, 140, 30);
+        jButton3.setBounds(400, 200, 160, 50);
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jButton5.setText("Accueil");
@@ -71,10 +71,10 @@ public class Adherent extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 220, 500);
 
-        jButton4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jButton4.setText("Historique");
-        jPanel1.add(jButton4);
-        jButton4.setBounds(560, 310, 130, 30);
+        jButton1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jButton1.setText("Kindles");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(400, 300, 160, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,9 +138,9 @@ public class Adherent extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

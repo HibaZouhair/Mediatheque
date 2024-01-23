@@ -27,6 +27,7 @@ public class Accueil extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -43,6 +44,13 @@ public class Accueil extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(null);
 
+        jButton5.setBackground(new java.awt.Color(78, 51, 51));
+        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Gestion des adherents");
+        jPanel1.add(jButton5);
+        jButton5.setBounds(430, 340, 280, 60);
+
         jButton2.setBackground(new java.awt.Color(78, 51, 51));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -53,7 +61,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(280, 350, 230, 60);
+        jButton2.setBounds(100, 340, 270, 60);
 
         jButton1.setBackground(new java.awt.Color(78, 51, 51));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -110,7 +118,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton3);
-        jButton3.setBounds(90, 260, 270, 60);
+        jButton3.setBounds(100, 240, 270, 60);
 
         jButton4.setBackground(new java.awt.Color(78, 51, 51));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -122,7 +130,7 @@ public class Accueil extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton4);
-        jButton4.setBounds(430, 260, 280, 60);
+        jButton4.setBounds(430, 240, 280, 60);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/Library.jpeg"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -219,6 +227,7 @@ public class Accueil extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

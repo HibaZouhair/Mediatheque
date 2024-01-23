@@ -33,6 +33,7 @@ public class Recherche extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -40,6 +41,7 @@ public class Recherche extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Recherche");
@@ -48,6 +50,12 @@ public class Recherche extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
         jPanel1.setLayout(null);
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setText("Rechercher un document");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(210, 60, 390, 60);
+
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "isbn", "titre", "auteur", "éditeur" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -55,7 +63,7 @@ public class Recherche extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(50, 132, 170, 30);
+        jComboBox1.setBounds(50, 260, 170, 30);
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,14 +79,17 @@ public class Recherche extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jTable2);
 
         jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(50, 180, 700, 110);
+        jScrollPane2.setBounds(50, 310, 700, 110);
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(420, 130, 230, 30);
+        jTextField1.setBounds(430, 260, 230, 30);
 
         jButton1.setText("Search");
         jPanel1.add(jButton1);
-        jButton1.setBounds(670, 130, 80, 30);
+        jButton1.setBounds(670, 260, 80, 30);
 
+        jButton2.setBackground(new java.awt.Color(78, 51, 51));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Accueil");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,11 +97,16 @@ public class Recherche extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(670, 30, 72, 23);
+        jButton2.setBounds(40, 70, 90, 40);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Article", "Bande dessinée", "Manga", "Magazine", "Dictionnaire", " " }));
         jPanel1.add(jComboBox2);
-        jComboBox2.setBounds(50, 82, 170, 30);
+        jComboBox2.setBounds(50, 220, 170, 30);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/loginandsignup/bookshelf.jpeg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(30, -20, 740, 160);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -162,6 +178,8 @@ public class Recherche extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
