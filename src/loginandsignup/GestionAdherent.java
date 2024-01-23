@@ -85,7 +85,7 @@ public class GestionAdherent extends javax.swing.JFrame {
         jScrollPane1.setBounds(30, 260, 740, 110);
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton1.setText("Ajouter un dictionnaire");
+        jButton1.setText("Ajouter un adherent");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -95,7 +95,7 @@ public class GestionAdherent extends javax.swing.JFrame {
         jButton1.setBounds(70, 380, 240, 40);
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton2.setText("Supprimer un dictionnaire");
+        jButton2.setText("Supprimer un adherent");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -145,26 +145,26 @@ public class GestionAdherent extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Document DocumentFrame = new Document();
-        DocumentFrame.setVisible(true);
-        DocumentFrame.pack();
-        DocumentFrame.setLocationRelativeTo(null);
+        Accueil AccueilFrame = new Accueil();
+        AccueilFrame.setVisible(true);
+        AccueilFrame.pack();
+        AccueilFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        AjouterDictionnaire AjouterDictionnaireFrame = new AjouterDictionnaire();
-        AjouterDictionnaireFrame.setVisible(true);
-        AjouterDictionnaireFrame.pack();
-        AjouterDictionnaireFrame.setLocationRelativeTo(null);
+        AjouterAdherent AjouterAdherentFrame = new AjouterAdherent();
+        AjouterAdherentFrame.setVisible(true);
+        AjouterAdherentFrame.pack();
+        AjouterAdherentFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        SupprimerDictionnaire SupprimerDictionnaireFrame = new SupprimerDictionnaire();
-        SupprimerDictionnaireFrame.setVisible(true);
-        SupprimerDictionnaireFrame.pack();
-        SupprimerDictionnaireFrame.setLocationRelativeTo(null);
+        SupprimerAdherent SupprimerAdherentFrame = new SupprimerAdherent();
+        SupprimerAdherentFrame.setVisible(true);
+        SupprimerAdherentFrame.pack();
+        SupprimerAdherentFrame.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

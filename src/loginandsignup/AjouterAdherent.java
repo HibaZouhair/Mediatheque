@@ -64,9 +64,9 @@ public class AjouterAdherent extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Ajouter article");
+        jLabel10.setText("Ajouter un adherent");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(260, 40, 240, 60);
+        jLabel10.setBounds(260, 40, 320, 60);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

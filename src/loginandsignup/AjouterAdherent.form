@@ -103,11 +103,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Ajouter article"/>
+            <Property name="text" type="java.lang.String" value="Ajouter un adherent"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="260" y="40" width="240" height="60"/>
+              <AbsoluteConstraints x="260" y="40" width="320" height="60"/>
             </Constraint>
           </Constraints>
         </Component>
