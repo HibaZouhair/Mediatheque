@@ -4,6 +4,8 @@
  */
 package loginandsignup;
 
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Admin
@@ -31,16 +33,16 @@ public class Manga extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        mangas = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        search = new javax.swing.JButton();
+        jText1 = new javax.swing.JTextField();
+        choice = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Manga");
@@ -72,7 +74,7 @@ public class Manga extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(30, -20, 740, 160);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        mangas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
@@ -83,7 +85,7 @@ public class Manga extends javax.swing.JFrame {
                 "Illustrateur", "ISBN", "titre", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(mangas);
 
         jPanel1.add(jScrollPane1);
         jScrollPane1.setBounds(40, 240, 720, 140);
@@ -135,27 +137,32 @@ public class Manga extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(30, -20, 740, 160);
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("Search");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        search.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        search.setText("Search");
+        search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                searchActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton5);
-        jButton5.setBounds(550, 180, 130, 30);
+        jPanel2.add(search);
+        search.setBounds(550, 180, 130, 30);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jText1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jText1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(344, 180, 190, 30);
+        jText1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jText1KeyReleased(evt);
+            }
+        });
+        jPanel2.add(jText1);
+        jText1.setBounds(344, 180, 190, 30);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Illustrateur", "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome" }));
-        jPanel2.add(jComboBox1);
-        jComboBox1.setBounds(152, 180, 160, 30);
+        choice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Illustrateur", "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome" }));
+        jPanel2.add(choice);
+        choice.setBounds(152, 180, 160, 30);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(0, 0, 800, 500);
@@ -210,13 +217,17 @@ public class Manga extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_searchActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jText1ActionPerformed
+
+    private void jText1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jText1KeyReleased
+        
+    }//GEN-LAST:event_jText1KeyReleased
 
     /**
      * @param args the command line arguments
@@ -254,12 +265,11 @@ public class Manga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> choice;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -267,7 +277,8 @@ public class Manga extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jText1;
+    private javax.swing.JTable mangas;
+    private javax.swing.JButton search;
     // End of variables declaration//GEN-END:variables
 }
