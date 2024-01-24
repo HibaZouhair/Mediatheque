@@ -35,6 +35,7 @@ public class SupprimerMagazine extends javax.swing.JFrame {
         ISBN = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SupprimerMagazine");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
@@ -106,7 +107,7 @@ public class SupprimerMagazine extends javax.swing.JFrame {
     }//GEN-LAST:event_supprimerMagazineActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Magazines MagazinesFrame = new Magazines();
+        MagazinesGUI MagazinesFrame = new MagazinesGUI();
         MagazinesFrame.setVisible(true);
         MagazinesFrame.pack();
         MagazinesFrame.setLocationRelativeTo(null);

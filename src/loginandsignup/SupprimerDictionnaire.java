@@ -32,9 +32,10 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        ISBN = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SupprimerDictionnaire");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
@@ -75,8 +76,8 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
         jLabel5.setText("ISBN");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(260, 230, 100, 40);
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(330, 240, 180, 22);
+        jPanel1.add(ISBN);
+        ISBN.setBounds(330, 240, 180, 22);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,7 +98,7 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Dictionnaire DictionnaireFrame = new Dictionnaire();
+        DictionnaireGUI DictionnaireFrame = new DictionnaireGUI();
         DictionnaireFrame.setVisible(true);
         DictionnaireFrame.pack();
         DictionnaireFrame.setLocationRelativeTo(null);
@@ -140,12 +141,12 @@ public class SupprimerDictionnaire extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ISBN;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JButton supprimerDictionnaire;
     // End of variables declaration//GEN-END:variables
 }

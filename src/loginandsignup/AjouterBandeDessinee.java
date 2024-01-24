@@ -53,6 +53,7 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         tome = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("AjouterBandeDessinee");
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 500));
@@ -193,7 +194,7 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Bandedessinee BandedessineeFrame = new Bandedessinee();
+        BandedessineeGUI BandedessineeFrame = new BandedessineeGUI();
         BandedessineeFrame.setVisible(true);
         BandedessineeFrame.pack();
         BandedessineeFrame.setLocationRelativeTo(null);

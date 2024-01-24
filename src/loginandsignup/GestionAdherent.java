@@ -35,7 +35,7 @@ public class GestionAdherent extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         CNE = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
+        getAdherentByCNE = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -112,15 +112,15 @@ public class GestionAdherent extends javax.swing.JFrame {
         jPanel1.add(CNE);
         CNE.setBounds(344, 180, 190, 30);
 
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("Search");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        getAdherentByCNE.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        getAdherentByCNE.setText("Search");
+        getAdherentByCNE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                getAdherentByCNEActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5);
-        jButton5.setBounds(550, 180, 130, 30);
+        jPanel1.add(getAdherentByCNE);
+        getAdherentByCNE.setBounds(550, 180, 130, 30);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -174,9 +174,9 @@ public class GestionAdherent extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CNEActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void getAdherentByCNEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getAdherentByCNEActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_getAdherentByCNEActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,9 +216,9 @@ public class GestionAdherent extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField CNE;
     private javax.swing.JTable adherents;
+    private javax.swing.JButton getAdherentByCNE;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

@@ -107,7 +107,7 @@ public class SupprimerManga extends javax.swing.JFrame {
     }//GEN-LAST:event_supprimerMangaActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Manga MangaFrame = new Manga();
+        MangaGUI MangaFrame = new MangaGUI();
         MangaFrame.setVisible(true);
         MangaFrame.pack();
         MangaFrame.setLocationRelativeTo(null);
