@@ -38,7 +38,7 @@ public class Article extends javax.swing.JFrame {
         articles = new javax.swing.JTable();
         jButton2 = new javax.swing.JButton();
         ISBN = new javax.swing.JTextField();
-        search = new javax.swing.JButton();
+        getArticleByISBN = new javax.swing.JButton();
         choice = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -115,15 +115,15 @@ public class Article extends javax.swing.JFrame {
         jPanel1.add(ISBN);
         ISBN.setBounds(344, 180, 190, 30);
 
-        search.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        search.setText("Search");
-        search.addActionListener(new java.awt.event.ActionListener() {
+        getArticleByISBN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        getArticleByISBN.setText("Search");
+        getArticleByISBN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchActionPerformed(evt);
+                getArticleByISBNActionPerformed(evt);
             }
         });
-        jPanel1.add(search);
-        search.setBounds(550, 180, 130, 30);
+        jPanel1.add(getArticleByISBN);
+        getArticleByISBN.setBounds(550, 180, 130, 30);
 
         choice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "day", "Journal" }));
         choice.addActionListener(new java.awt.event.ActionListener() {
@@ -176,10 +176,10 @@ public class Article extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
+    private void getArticleByISBNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getArticleByISBNActionPerformed
         
         
-    }//GEN-LAST:event_searchActionPerformed
+    }//GEN-LAST:event_getArticleByISBNActionPerformed
 
     private void ISBNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ISBNActionPerformed
         // TODO add your handling code here:
@@ -229,6 +229,7 @@ public class Article extends javax.swing.JFrame {
     private javax.swing.JTextField ISBN;
     private javax.swing.JTable articles;
     private javax.swing.JComboBox<String> choice;
+    private javax.swing.JButton getArticleByISBN;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
@@ -236,6 +237,5 @@ public class Article extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton search;
     // End of variables declaration//GEN-END:variables
 }

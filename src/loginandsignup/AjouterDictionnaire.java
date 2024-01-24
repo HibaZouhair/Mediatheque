@@ -71,7 +71,7 @@ public class AjouterDictionnaire extends javax.swing.JFrame {
         ajouterDictionnaire.setForeground(new java.awt.Color(255, 255, 255));
         ajouterDictionnaire.setText("Ajouter");
         jPanel1.add(ajouterDictionnaire);
-        ajouterDictionnaire.setBounds(620, 50, 130, 50);
+        ajouterDictionnaire.setBounds(460, 390, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));

@@ -4,7 +4,7 @@
  */
 package loginandsignup;
 
-import javax.swing.table.DefaultTableModel;
+
 
 /**
  *
@@ -40,8 +40,8 @@ public class Manga extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        search = new javax.swing.JButton();
-        jText1 = new javax.swing.JTextField();
+        getMangaByISBN = new javax.swing.JButton();
+        ISBN = new javax.swing.JTextField();
         choice = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -137,28 +137,28 @@ public class Manga extends javax.swing.JFrame {
         jPanel2.add(jLabel2);
         jLabel2.setBounds(30, -20, 740, 160);
 
-        search.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        search.setText("Search");
-        search.addActionListener(new java.awt.event.ActionListener() {
+        getMangaByISBN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        getMangaByISBN.setText("Search");
+        getMangaByISBN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchActionPerformed(evt);
+                getMangaByISBNActionPerformed(evt);
             }
         });
-        jPanel2.add(search);
-        search.setBounds(550, 180, 130, 30);
+        jPanel2.add(getMangaByISBN);
+        getMangaByISBN.setBounds(550, 180, 130, 30);
 
-        jText1.addActionListener(new java.awt.event.ActionListener() {
+        ISBN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jText1ActionPerformed(evt);
+                ISBNActionPerformed(evt);
             }
         });
-        jText1.addKeyListener(new java.awt.event.KeyAdapter() {
+        ISBN.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jText1KeyReleased(evt);
+                ISBNKeyReleased(evt);
             }
         });
-        jPanel2.add(jText1);
-        jText1.setBounds(344, 180, 190, 30);
+        jPanel2.add(ISBN);
+        ISBN.setBounds(344, 180, 190, 30);
 
         choice.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Illustrateur", "ISBN", "titre ", "auteurs", "editeur", "AnneeEdition", "URL", "type", "NombreDePages", "tome" }));
         jPanel2.add(choice);
@@ -217,17 +217,17 @@ public class Manga extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
+    private void getMangaByISBNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getMangaByISBNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_searchActionPerformed
+    }//GEN-LAST:event_getMangaByISBNActionPerformed
 
-    private void jText1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jText1ActionPerformed
+    private void ISBNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ISBNActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jText1ActionPerformed
+    }//GEN-LAST:event_ISBNActionPerformed
 
-    private void jText1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jText1KeyReleased
+    private void ISBNKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ISBNKeyReleased
         
-    }//GEN-LAST:event_jText1KeyReleased
+    }//GEN-LAST:event_ISBNKeyReleased
 
     /**
      * @param args the command line arguments
@@ -265,7 +265,9 @@ public class Manga extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ISBN;
     private javax.swing.JComboBox<String> choice;
+    private javax.swing.JButton getMangaByISBN;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
@@ -277,8 +279,6 @@ public class Manga extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jText1;
     private javax.swing.JTable mangas;
-    private javax.swing.JButton search;
     // End of variables declaration//GEN-END:variables
 }

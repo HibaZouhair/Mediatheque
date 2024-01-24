@@ -75,7 +75,7 @@ public class AjouterBandeDessinee extends javax.swing.JFrame {
         ajouterBandeDessinee.setForeground(new java.awt.Color(255, 255, 255));
         ajouterBandeDessinee.setText("Ajouter");
         jPanel1.add(ajouterBandeDessinee);
-        ajouterBandeDessinee.setBounds(620, 50, 130, 50);
+        ajouterBandeDessinee.setBounds(510, 400, 130, 50);
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 3, 36)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
